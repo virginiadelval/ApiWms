@@ -4,12 +4,12 @@
 //         .then(response => response.json()) //.then, es una promesa= le pide que traiga en formato json toda la info que encuentre
 //         .then(data => mostrarData1(data)) // una promesa de mostar los datos bajo la funcion mostrarData. esta con => sino estaria escrita de otra manera
 //         .catch(error => console.log(error)) // simpre que hay un .fetch, hay un .catch= captura algun error si es que los hay
-
-let url = 'http://localhost:3000/api/arbolado'; // desde tu backend local
+let url = 'https://apiwms.onrender.com/api/arbolado'; // desde tu backend local
 fetch(url)
     .then(response => response.json())
     .then(data => mostrarData1(data))
     .catch(error => console.log(error));
+
 
 // //ahora le decimos que muestre en el HTMl. 
 // //primero se "llama a" la variable mostrarData , ya estaba definida arriba.

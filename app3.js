@@ -3,7 +3,7 @@
 
 // const api_url =
 //   "https://geocloud.municipalidadsalta.gob.ar/geoserver/public/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=public%3Acenso_forestal&maxFeatures=50&outputFormat=application%2Fjson"; // crea una variable con la url de la api
-  let api_url = 'http://localhost:3000/api/arbolado'; // desde tu backend local
+  let api_url = 'https://apiwms.onrender.com/api/arbolado'; // desde tu backend local
 fetch(api_url)
     .then(response => response.json())
     .then(data => mostrarData1(data))
